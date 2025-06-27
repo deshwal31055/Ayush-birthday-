@@ -1,0 +1,33 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe6f0;
+  text-align: center;
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+.gift-box {
+  width: 200px;
+  cursor: pointer;
+}
+.hearts span {
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+.slide-down {
+  animation: slideDown 2s ease-in-out forwards;
+}
+.slide-up {
+  animation: slideUp 2s ease-in-out forwards;
+}
+@keyframes slideDown {
+  from { transform: translateY(-100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

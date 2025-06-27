@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Ayush 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="start-screen" id="startScreen">
+    <h1>🎁 I have a surprise for you!</h1>
+    <p>Click the gift 🎁</p>
+    <img src="Assets/gift_box.jpg" id="giftBox" class="gift-box" alt="Gift Box" />
+  </div>
+
+  <div class="soniyooo-scene hidden" id="soniyoooScene">
+    <h2>Hii Soniyooo 🤗!!!</h2>
+    <img src="Assets/soniyooo_sticker.jpg" width="200" />
+    <p>Click on heart one by one 😜</p>
+    <div class="hearts" id="heartsContainer"></div>
+  </div>
+
+  <div class="birthday-scene hidden" id="birthdayScene">
+    <h2>🎉 HAPPY BIRTHDAY AAYU BABY 🎂 🥳</h2>
+    <p>Buddha hone lgra babu 🤣🤣</p>
+    <img src="Assets/cake.jpg" width="300" />
+    <audio autoplay loop>
+      <source src="Assets/music.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div class="gift-question hidden" id="giftQuestion">
+    <p>Do u want gift cutiee??</p>
+    <button onclick="giftResponse(false)">Nhi chahiye</button>
+    <button onclick="giftResponse(true)">Dedo</button>
+  </div>
+
+  <div class="gift-response hidden" id="giftResponse">
+    <p id="responseText"></p>
+    <button id="clickHereBtn" class="hidden" onclick="showGift()">Click Here</button>
+  </div>
+
+  <div class="final-scene hidden" id="finalScene">
+    <img src="Assets/gift_reminder.jpg" class="slide-down" width="300" />
+    <p>TUM KAISE BHUL JAATE HO KI MAI HI TOH HU TUMHARA GIFT 😉</p>
+    <img src="Assets/final_photo.jpg" class="slide-up" width="300" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
