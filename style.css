@@ -31,3 +31,13 @@ body {
   from { transform: translateY(100px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+.heart {
+  width: 60px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
